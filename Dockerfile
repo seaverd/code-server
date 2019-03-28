@@ -31,5 +31,4 @@ RUN locale-gen en_US.UTF-8
 # configured in /etc/default/locale so we need to set it manually.
 ENV LANG=en_US.UTF-8
 ENV LC_ALL=en_US.UTF-8
-ENV --password=password
-ENTRYPOINT ["code-server"]
+ENTRYPOINT ["code-server --password=password"]
